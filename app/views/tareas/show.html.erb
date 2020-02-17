@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @tarea.nombre %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= image_tag @tarea.image.url(:thumb) %>
+</p>
+
+<p>
+  <strong>Subida:</strong>
+  <%= @tarea.subida %>
+</p>
+
+<p>
+  <strong>Listo:</strong>
+  <%= @tarea.listo %>
+</p>
+
+<%= link_to 'Edit', edit_tarea_path(@tarea) %> |
+<%= link_to 'Back', tareas_path %>

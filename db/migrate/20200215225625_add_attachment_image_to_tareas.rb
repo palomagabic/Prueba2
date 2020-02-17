@@ -1,0 +1,11 @@
+class AddAttachmentImageToTareas < ActiveRecord::Migration[5.2]
+  def self.up
+    change_table :tareas do |t|
+      t.attachment :image
+    end
+  end
+
+  def self.down
+    remove_attachment :tareas, :image
+  end
+end

@@ -1,0 +1,17 @@
+<div class="row">
+  <% @tareapositivas.each do |tareapositiva| %>
+    <a href="/tareas/<%=tareapositiva.id%>">
+    <div class="card" style="width: 18rem;">
+      <%= image_tag tareapositiva.image.url, class: 'card-img-top' %>
+      <div class="card-body">
+        <h5 class="card-title"><%= tareapositiva.nombre %></h5>
+      </div>
+    </a>
+      <a href="/tareas/<%=tareapositiva.id%>/edit">
+      <div class="card-body">
+        <button type="button" class="btn btn-primary">Listo</button>
+      </div>
+      </a>
+    </div>
+  <% end %>
+</div>

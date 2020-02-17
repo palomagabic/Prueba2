@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  subida: 2020-02-15
+  listo: false
+
+two:
+  nombre: MyString
+  subida: 2020-02-15
+  listo: false
